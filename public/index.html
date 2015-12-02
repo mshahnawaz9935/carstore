@@ -12,6 +12,12 @@
             $("#vid").click(function () {
                 $("#targetDiv").load("video.html");
             });
+            $("#login").click(function () {
+                $("#targetDiv").load("login.html");
+            });
+            $("#home").click(function () {
+                $("#targetDiv").load("Home.html");
+            });
         });
 </script>
     <style type="text/css">
@@ -36,10 +42,11 @@
 <body>
     <div id ="header" style="background-image:url('Images/p3.jpg'); height:450px;width:1330px;background-size:1330px 450px";>
         <p style="color: white; float: left;font-size:35px;height:312px;height:35px; font-weight: bold;margin:20px;">&nbsp;&nbsp;&nbsp; Porsche Store</p>
+
         <nav id="colorNav">
             <ul style="margin:25px;color: white; height: 28px; margin-left:155px;float:left;">
                 <li>
-                    <a href="#" onclick="getData('/Home.html', 'targetDiv')">Home</a>
+                    <a href="#" id="home">Home</a>
                 </li>
                 <li>
                     <a href="#" onclick="getData('Supercars.html', 'targetDiv')">SuperCars</a>
@@ -48,7 +55,7 @@
                     <a href="#" >Store</a>
                 </li>
                 <li>
-                    <a href="#" onclick="getData('/login.html', 'targetDiv')">Login</a>
+                    <a href="#" id="login">Login</a>
                 </li>
                 <li>
                     <a href="#" id="vid">Videos</a>
@@ -69,8 +76,7 @@
         <input type="button" value="Display Message" onclick="getData('/data.txt', 'targetDiv')">
     </form>-->
     <div id="targetDiv" style="height:auto; width:auto">
-        <h3>Our Models</h3>
-        
+           <h3>Our Models</h3> 
         <a href="#" id="link" ><img src="Images/pimage/boxster.JPG" /></a>
         <img alt="" class="auto-style1" src="Images/pimage/CayMan.JPG" /><img alt="" class="auto-style2" src="Images/pimage/918%20Spyder.JPG" /><img alt="" class="auto-style3" src="Images/pimage/911.JPG" /><img alt="" class="auto-style4" src="Images/pimage/Panamera.JPG" />
 
