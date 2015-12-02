@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#link").click(function () {
+            $("#container").load("video.html");
+        });
+        $("#A1").click(function () {
+            $("#container").load("cars.html");
+        });
+    });
+</script>
+    </head>
+<body>
+    <a href="#" id="link"><img src="Images/pimage/boxster.JPG" /></a>
+    <a href="#" id="A1"><img src="Images/pimage/boxster.JPG" /></a>
+    <div id="tg">
+        <div id="container"></div>
+        
+    </div>
+
+
+
+</body>
+</html>

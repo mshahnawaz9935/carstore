@@ -1,0 +1,16 @@
+<html>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<a href="#" onclick="abc('abc.htm')">Hello</a>
+<script>
+function abc(pagename)
+{
+    alert('Pressed!!');
+   // document.write(pagename);
+$("#content").load('abc.htm');
+}
+</script>
+<div id="content">Hello brothers</div>
+</body>
+</html>
