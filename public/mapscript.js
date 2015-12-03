@@ -17,7 +17,7 @@ var locations = [['Ranelaugh', 53.333, -6.249], ['RathMines', 38.907192, -77.036
 function initMap() {
     var mapOptions = {
         center: new google.maps.LatLng(53.3515167, -6.2486312),
-        zoom: 7,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var mapCanvas = document.getElementById('map');
