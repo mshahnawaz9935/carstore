@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCulTzFdrtSmpW2xZLQjUmF426N3Ayyul4&callback=initMap"
+            async defer></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+    <script src="mapscript.js"></script>
+</head>
+<body>
+    <br />
+    <br />
+    <div style="margin-left:100px">
+    <div><select id="drop" onchange="change()" >
+    <option value="0">O Connel Street</option>
+    <option value="1">RathMines</option>
+    <option value="2">Drumcondra</option>
+    <option value="3">Washington,D.C</option>
+    <option value="4">London</option>
+    <option value="5">Bern</option>
+    <option value="6">Brasilia</option>
+    <option value="7">Beijing</option>
+    <option value="8"> Paris</option>
+    <option value="9">Rome</option>
+    <option value="10">Singapore</option>
+    <option value="11">Moscow</option>
+    <option value="12">Wellington</option>
+    <option value="13">New Delhi</option>
+    <option value="14">Canberra</option>
+    <option value="15">Sydney</option>
+
+</select>
+   
+
+
+    </div>
+    <br />
+    <div>Show data here</div>
+    <br />
+    <h1 id="abc">Porsche Store Location 1</h1>
+    <div id="map" style="height:600px;width:800px"></div>
+    
+
+    </div>
+</body>
+</html>

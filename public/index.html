@@ -18,6 +18,9 @@
             $("#home").click(function () {
                 $("#targetDiv").load("Home.html");
             });
+            $("#locations").click(function () {
+                $("#targetDiv").load("locations.html");
+            });
         });
 </script>
     <style type="text/css">
@@ -52,7 +55,7 @@
                     <a href="#" onclick="getData('Supercars.html', 'targetDiv')">SuperCars</a>
                 </li>
                 <li>
-                    <a href="#" >Store</a>
+                    <a href="#"  id="locations">Store</a>
                 </li>
                 <li>
                     <a href="#" id="login">Login</a>
