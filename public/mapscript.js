@@ -13,11 +13,13 @@
 //['Singapore', 1.352083, 103.819836]
 
 //   ];
-var locations = [['Ranelaugh', 53.333, -6.249], ['RathMines', 38.907192, -77.036871], ['Drumcondra', 53.2702749, -6.1420218]];
+var locations = [['Henry Street', 53.349369, -6.262814], ['Belfast', 54.5965727, -6.0462222], ['Rochenstown', 53.2702749, -6.1420218]];
 function initMap() {
+    var p = document.getElementById("abc");
+    p.innerHTML = locations[0][0];
     var mapOptions = {
-        center: new google.maps.LatLng(53.3515167, -6.2486312),
-        zoom: 12,
+        center: new google.maps.LatLng(53.349369, -6.262814),
+        zoom: 11,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var mapCanvas = document.getElementById('map');
@@ -28,11 +30,11 @@ function initMap() {
     var marker, i;
 
     marker = new google.maps.Marker({
-        position: new google.maps.LatLng(53.3515167, -6.2486312),
+        position: new google.maps.LatLng(53.349369, -6.262814),
         map: map
     });
 
-    google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+    google.maps.event.addListener(marker, (function (marker, i) {
         return function () {
             infowindow.open(map, marker);
 
@@ -50,7 +52,7 @@ function change() {
 
     var mapOptions = {
         center: new google.maps.LatLng(locations[z][1], locations[z][2]),
-        zoom: 13,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var mapCanvas = document.getElementById('map');
