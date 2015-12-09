@@ -22,11 +22,12 @@ function genVideoList(data) {
     console.log('genVideoList');
     var video_array = data.videos;
     var html_string = "";
-
+    var cars = ["Porsche Carrera GT Review","Porsche Cayman GTS and Boxster","2015 Porsche Cayman GTS","All about Top Speed","Porsche Cayennee SUV"];
     for (var i = 0; i < video_array.length; i++) {
         var obj = video_array[i];
         url = obj;
-        tmp = "<li><a href='" + url + "'>Video " + (i + 1) + "</a></li>";
+        //tmp = "<li><a href='" + url + "'>Video " + (i + 1) + "</a></li>";
+        tmp = "<li><a href='" + url + "'>"+cars[i]+"</a></li>";
         html_string += tmp;
     }
     console.log('genVideoList html: ' + html_string);
