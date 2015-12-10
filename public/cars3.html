@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Customize</title>
+     <link rel="stylesheet" href="assets/carscss/jquery-fullsizable.css" />
+    <link rel="stylesheet" href="assets/carscss/jquery-fullsizable-theme.css" />
+  <script src="JS/jscars/jquery-1.7.2.js"></script>
+  <script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
+  <script src="JS/jscars/jquery-fullsizable.js"></script>
+  <script>
+      $(function () {
+          $('#container a').fullsizable({
+              detach_id: 'container'
+          });
+
+          $(document).on('fullsizable:opened', function () {
+              $("#jquery-fullsizable").swipe({
+                  swipeLeft: function () {
+                      $(document).trigger('fullsizable:next')
+                  },
+                  swipeRight: function () {
+                      $(document).trigger('fullsizable:prev')
+                  },
+                  swipeUp: function () {
+                      $(document).trigger('fullsizable:close')
+                  }
+              });
+          });
+      });
+  </script>
+</head>
+<body>
+    <div style="border-style: solid; border-color: inherit; border-width: 1px; width: 1315px;">
+
+    <h1 style=" font-size: 1.875rem;font-family: PFranklinGothicCnd, Arial, sans-serif; margin: 0px 74.1875px;">Porsche Boxster GTS</h1>
+    <div id="container">
+        <a href="Images/cayman/box1.jpg">
+            <img src="Images/cayman/box1.jpg" height="300" style="width: 521px" /></a> 
+        <a href="Images/cayman/box3.jpg">
+                <img src="Images/cayman/box3.jpg" style="width: 300px; height: 136px;" /></a>&nbsp;
+        <a href="Images/cayman/box2.jpg"><img src="Images/cayman/box2.jpg" style="width: 300px; height: 136px; margin-top: 0px;" /></a>
+        <br />
+    </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a>ADD TO CART</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIEW MORE CARS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Base Price :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        £ 65,989.00<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Price for equipment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; £ 0.00<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Price:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; £ 65,989.00<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        <a href="Images/cayman/cayman2.jpg"></a>
+        
+        </div>
+   
+
+
+</div>
+</body>
+</html>
